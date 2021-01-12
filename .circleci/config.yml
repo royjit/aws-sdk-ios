@@ -545,8 +545,8 @@ jobs:
           name: Make directory structure
           command: |
             mkdir -p "$sdkNameWithVersion"
-            mv "output/XCF/" "$sdkNameWithVersion/frameworks"
-            rm -rf "output/XCF/"
+            mv "XCFrameworks/output/XCF/" "$sdkNameWithVersion/frameworks"
+            rm -rf "XCFrameworks/output/XCF/"
       - run:
           name: Copy SDK resource files
           command: |

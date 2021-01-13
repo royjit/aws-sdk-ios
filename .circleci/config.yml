@@ -425,7 +425,7 @@ jobs:
       - save_cache:
           key: build_xcframeworks-result-{{ .Revision }}
           paths:
-            - XCFrameworks
+            - Xcframeworks
 
   release_carthage:
     macos:
@@ -545,8 +545,8 @@ jobs:
           name: Make directory structure
           command: |
             mkdir -p "$sdkNameWithVersion"
-            mv "XCFrameworks/output/XCF/" "$sdkNameWithVersion/frameworks"
-            rm -rf "XCFrameworks/output/XCF/"
+            mv "Xcframeworks/output/XCF/" "$sdkNameWithVersion/frameworks"
+            rm -rf "Xcframeworks/output/XCF/"
       - run:
           name: Copy SDK resource files
           command: |

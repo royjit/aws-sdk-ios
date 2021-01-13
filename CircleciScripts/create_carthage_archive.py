@@ -1,8 +1,7 @@
 import os
-import sys
 import shutil
 
-from functions import log, run_command
+from functions import log
 
 XCFRAMEWORK_PATH = "./output/XCF/"
 

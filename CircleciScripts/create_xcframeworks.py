@@ -40,7 +40,6 @@ def create_archive(framework, project_file, build_for_device):
         archive_path,
         "SKIP_INSTALL=NO",
         "BUILD_LIBRARY_FOR_DISTRIBUTION=YES"
-
     ] 
     
     (exit_code, out, err) = run_command(cmd, keepalive_interval=300, timeout=7200)

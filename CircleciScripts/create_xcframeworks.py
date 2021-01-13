@@ -4,7 +4,7 @@ import sys
 from framework_list import frameworks
 from functions import log, run_command
 
-EXCLUDE_FROM_XCFramework = [
+EXCLUDE_FROM_XCFRAMEWORK = [
     # This isn't a real framework
     "AWSiOSSDKv2",
     # Legacy frameworks not built or packaged

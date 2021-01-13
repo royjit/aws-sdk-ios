@@ -75,7 +75,7 @@ def map_framework_to_project(framework_list):
 project_dir = os.getcwd()
 log(f"Creating XCFrameworks in {project_dir}")
 
-filtered_frameworks = ["AWSCore"]#list(filter(is_framework_included, frameworks))
+filtered_frameworks = list(filter(is_framework_included, frameworks))
 filtered_frameworks.append("AWSMobileClientXCF")
 framework_map = map_framework_to_project(filtered_frameworks)
 
